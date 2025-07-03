@@ -7,12 +7,12 @@ It performs both **digital (relay)** and **analog (DAC/MUX/ADC)** signal tests w
 
 ## 📁 Project Structure
 
-main.py # Entry point for the app
-can_test_ui.py # Main PyQt5 GUI
-test_runner.py # Handles test logic
-dac_controller.py # Sends analog signals via I2C DAC
-parameters.json # All test configurations
-ergon.jpg # Logo or branding image
+-main.py # Entry point for the app
+-can_test_ui.py # Main PyQt5 GUI
+-test_runner.py # Handles test logic
+-dac_controller.py # Sends analog signals via I2C DAC
+-parameters.json # All test configurations
+-ergon.jpg # Logo or branding image
 
 ---
 
