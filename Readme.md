@@ -8,14 +8,15 @@ It performs both **digital (relay)** and **analog (DAC/MUX/ADC)** signal tests w
 ## 📁 Project Structure
 
 eol_testingapp/
-├── main.py # Entry point to launch the app
-├── can_test_ui.py # PyQt5-based GUI implementation
-├── test_runner.py # Core test execution logic
-├── dac_controller.py # I2C DAC control for analog signal generation
-├── parameters.json # Configuration for all signal tests
-├── ergon.jpg # Logo used in UI
-├── .gitignore # Ignore unnecessary files in Git
-└── requirements.txt # Python dependencies (generated via pip freeze)
+├── main.py             # Entry point to launch the app  
+├── can_test_ui.py      # PyQt5-based GUI implementation  
+├── test_runner.py      # Core test execution logic  
+├── dac_controller.py   # I2C DAC control for analog signal generation  
+├── parameters.json     # Configuration for all signal tests  
+├── ergon.jpg           # Logo used in UI  
+├── .gitignore          # Ignore unnecessary files in Git  
+└── requirements.txt    # Python dependencies (generated via pip freeze)  
+
 ---
 
 ## 🚀 Features
