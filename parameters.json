@@ -1,0 +1,116 @@
+{
+  "signals": [
+    {
+      "name": "Key Switch",
+      "category": "digital",
+      "tests": [
+        {
+          "test_name": "on_off_test",
+          "method": "digital_write",
+          "config": {
+            "can_feedback": {
+              "can_id": 48,
+              "expected_data_bytes": [1],
+              "data_index": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Reverse",
+      "category": "digital",
+      "tests": [
+        {
+          "test_name": "on_off_test",
+          "method": "digital_write",
+          "config": {
+            "can_feedback": {
+              "can_id": 48,
+              "expected_data_bytes": [1],
+              "data_index": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Boost",
+      "category": "digital",
+      "tests": [
+        {
+          "test_name": "on_off_test",
+          "method": "digital_write",
+          "config": {
+            "can_feedback": {
+              "can_id": 48,
+              "expected_data_bytes": [1],
+              "data_index": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Forward",
+      "category": "digital",
+      "tests": [
+        {
+          "test_name": "on_off_test",
+          "method": "digital_write",
+          "config": {
+            "can_feedback": {
+              "can_id": 48,
+              "expected_data_bytes": [1],
+              "data_index": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analog Signal 1",
+      "category": "analog",
+      "mux_channel": 0,  
+      "tests": [
+        {
+          "test_name": "voltage_check",
+          "method": "analog_output",
+          "config": {
+            "output_voltage": 2.0,
+            "raw_tolerance": 50,
+            "adc_channel": "P3",
+            "can_feedback": {
+              "can_id": 56,
+              "data_index": 0,
+              "byte_length": 2,
+              "max_raw": 4095
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analog Signal 2",
+      "category": "analog",
+      "mux_channel": 1,  
+      "tests": [
+        {
+          "test_name": "voltage_check",
+          "method": "analog_output",
+          "config": {
+            "output_voltage": 2.0,
+            "raw_tolerance": 50,
+            "adc_channel": "P2",
+            "can_feedback": {
+              "can_id": 57,
+              "data_index": 0,
+              "byte_length": 2,
+              "max_raw": 4095
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
